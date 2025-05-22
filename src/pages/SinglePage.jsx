@@ -35,11 +35,14 @@ function SinglePage() {
     return (
         <div>
             <Navbar />
+            <div className="flex flex-col items-center justify-center h-screen shadow-2xl background-gray-100  rounded-lg">
+            <h1 className="text-3xl font-bold mb-4">Book Details</h1>
             <h1>{book.bookName}</h1>
             <h1>{book.Author}</h1>
             <h1>{book.price}</h1>
             <h1>{book.bookGener}</h1>
             <button onClick={deleteBook}>Delete Me</button>
+            </div>
         </div>
     )
 }
