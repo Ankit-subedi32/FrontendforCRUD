@@ -42,6 +42,7 @@ function SinglePage() {
             <h1>{book.price}</h1>
             <h1>{book.bookGener}</h1>
             <button onClick={deleteBook}>Delete Me</button>
+            <button onClick={() => navigate(`/edit-page/${id}`)}>Edit Me</button>
             </div>
         </div>
     )
